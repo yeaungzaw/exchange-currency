@@ -1,20 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exchange Currency Converter</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    
+
     <main id="app">
 
-        
+        <section class="container">
+
+            <div>
+
+                <h1 class="header">Currency Converter</h1>
+
+                <!-- Card -->
+                <div class="card">
+
+                    <div class="country-and-input">
+                        <div class="select">
+                            <p>Amount</p>
+                            <div id="from">
+                                <select name="" id="fromCountry">
+                                    <option value="usd">US</option>
+                                    <option value="thb">Thailand</option>
+                                    <option value="mmk">MMK</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <input type="number" id="input">
+                    </div>
+
+                    <div id="downAndUpBtn" class="icon">
+                        <!-- icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff"
+                            viewBox="0 0 256 256">
+                            <path
+                                d="M120.49,167.51a12,12,0,0,1,0,17l-32,32a12,12,0,0,1-17,0l-32-32a12,12,0,1,1,17-17L68,179V48a12,12,0,0,1,24,0V179l11.51-11.52A12,12,0,0,1,120.49,167.51Zm96-96-32-32a12,12,0,0,0-17,0l-32,32a12,12,0,0,0,17,17L164,77V208a12,12,0,0,0,24,0V77l11.51,11.52a12,12,0,0,0,17-17Z">
+                            </path>
+                        </svg>
+                    </div>
+
+                    <div class="country-and-input" id="switch2">
+                        <div class="select">
+                            <p>Converted Amount</p>
+                            <div id="to">
+                                <select name="" id="toCountry">
+                                    <option value="mmk">MMK</option>
+                                    <option value="usd">US</option>
+                                    <option value="thb">Thialand</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <input id="output" disabled></input>
+                    </div>
+
+                    <button id="calcBtn">Calculate</button>
+                </div>
+
+            </div>
+
+        </section>
 
     </main>
 
 
     <script src="./js/app.js"></script>
 </body>
+
 </html>
